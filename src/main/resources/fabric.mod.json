@@ -9,8 +9,8 @@
     "bluefire_phoenix"
   ],
   "contact": {
-    "sources": "https://github.com/bloofirephoenix/BrokenNameTags",
-    "issues": "https://github.com/bloofirephoenix/BrokenNameTags/issues"
+    "sources": "https://github.com/Havio1/BrokenNameTags",
+    "issues": "https://github.com/Havio1/BrokenNameTags/issues"
   },
 
   "license": "MIT",
@@ -27,12 +27,9 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.6",
+    "fabricloader": ">=0.14.19",
     "fabric": "*",
-    "minecraft": "~1.19",
+    "minecraft": "~1.19.4",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
