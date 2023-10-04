@@ -14,13 +14,13 @@
     "issues": "https://github.com/Havio1/BrokenNameTags/issues"
   },
 
-  "license": "MIT",
+  "license": "ARR",
   "icon": "assets/brokennametags/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "bluefirephoenix.brokennametags.BrokenNameTags"
+      "net.bluefirephoenix.brokennametags.BrokenNameTags"
     ]
   },
   "mixins": [

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:raiders",
+    "minecraft:villager",
+    "minecraft:piglin",
+    "minecraft:piglin_brute",
+    "minecraft:minecart",
+    "#c:boats"
+  ]
+}
