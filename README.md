@@ -10,7 +10,7 @@ They include the name of the animal and the death message and cannot be used aga
 ## Additional Information
 
 While this mod is largely serverside, the client must have it installed to see the death message
-added to the name-tag's tooltip and to prevent the interaction animation from playing.
+added to the name-tag's tooltip, to prevent the interaction animation from playing, and to see the custom texture.
 
 There is a data pack tag called "blacklist", this is a tag to prevent entities from dropping
 a broken name-tag upon their death.
