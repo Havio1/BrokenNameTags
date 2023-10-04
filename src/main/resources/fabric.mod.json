@@ -6,7 +6,8 @@
   "name": "Broken Name Tags",
   "description": "Adds Broken Name Tags into Minecraft",
   "authors": [
-    "bluefire_phoenix"
+    "bluefire_phoenix",
+    "Havio"
   ],
   "contact": {
     "sources": "https://github.com/Havio1/BrokenNameTags",
@@ -27,9 +28,9 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.19",
+    "fabricloader": ">=0.14.22",
     "fabric": "*",
-    "minecraft": "~1.19.4",
+    "minecraft": "~1.20",
     "java": ">=17"
   }
 }

@@ -4,9 +4,8 @@
   "package": "bluefirephoenix.brokennametags.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "LivingEntityMixin"
-  ],
-  "client": [
+    "LivingEntityMixin",
+    "NameTagItemMixin"
   ],
   "injectors": {
     "defaultRequire": 1
