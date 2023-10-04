@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "brokennametags",
+  "id": "broken_name_tags",
   "version": "${version}",
 
   "name": "Broken Name Tags",
@@ -15,16 +15,16 @@
   },
 
   "license": "ARR",
-  "icon": "assets/brokennametags/icon.png",
+  "icon": "assets/broken_name_tags/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.bluefirephoenix.brokennametags.BrokenNameTags"
+      "net.bluefirephoenix.broken_name_tags.BrokenNameTags"
     ]
   },
   "mixins": [
-    "brokennametags.mixins.json"
+    "broken_name_tags.mixins.json"
   ],
 
   "depends": {

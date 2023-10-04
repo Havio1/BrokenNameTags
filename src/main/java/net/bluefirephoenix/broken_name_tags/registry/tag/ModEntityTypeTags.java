@@ -1,6 +1,6 @@
-package net.bluefirephoenix.brokennametags.registry.tag;
+package net.bluefirephoenix.broken_name_tags.registry.tag;
 
-import net.bluefirephoenix.brokennametags.BrokenNameTags;
+import net.bluefirephoenix.broken_name_tags.BrokenNameTags;
 import net.minecraft.entity.EntityType;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;

@@ -1,6 +1,6 @@
-package net.bluefirephoenix.brokennametags.mixin;
+package net.bluefirephoenix.broken_name_tags.mixin;
 
-import net.bluefirephoenix.brokennametags.registry.tag.ModEntityTypeTags;
+import net.bluefirephoenix.broken_name_tags.registry.tag.ModEntityTypeTags;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -38,7 +38,7 @@ public abstract class LivingEntityMixin extends Entity {
     Identifier currentEntity;
 
     @Unique
-    UUID currentEntityUUID;
+    String entityUUID;
 
     public LivingEntityMixin(EntityType<?> type, World world) {
         super(type, world);
@@ -48,7 +48,7 @@ public abstract class LivingEntityMixin extends Entity {
     public void onDeath(DamageSource source, CallbackInfo ci) {
 
         currentEntity = Registries.ENTITY_TYPE.getId(this.getType());
-        currentEntityUUID = this.getUuid();
+        entityUUID = this.getUuidAsString();
 
         if (!this.isRemoved() && !this.dead) {
 
@@ -72,10 +72,9 @@ public abstract class LivingEntityMixin extends Entity {
                     tag.setCustomName(name); // todo this is causing the crash
 
                     assert tag.getNbt() != null;
+                    tag.getNbt().putInt("CustomModelData", 5700260);
                     tag.getNbt().put("data", nbt);
-                    tag.getNbt().putBoolean("isBroken", true);
-
-                    tag.getNbt().putUuid("entityUUID", currentEntityUUID);
+                    tag.getNbt().putString("entityUUID", entityUUID);
 
                     dropStack(tag);
                 }

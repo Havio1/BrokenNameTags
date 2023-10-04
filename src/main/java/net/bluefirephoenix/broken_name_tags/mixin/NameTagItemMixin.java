@@ -1,4 +1,4 @@
-package net.bluefirephoenix.brokennametags.mixin;
+package net.bluefirephoenix.broken_name_tags.mixin;
 
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
@@ -33,7 +33,7 @@ public abstract class NameTagItemMixin extends Item {
             cancellable = true
     )
     public void useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand, CallbackInfoReturnable<ActionResult> cir) {
-        if (stack.hasCustomName() && !(entity instanceof PlayerEntity) && !stack.getNbt().getBoolean("isBroken")) {
+        if (stack.hasCustomName() && !(entity instanceof PlayerEntity) && !(stack.getNbt().getInt("CustomModelData") == 5700260)) {
             if (!user.getWorld().isClient && entity.isAlive()) {
                 entity.setCustomName(stack.getName());
                 if (entity instanceof MobEntity) {
